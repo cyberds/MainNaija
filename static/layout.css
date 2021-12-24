@@ -1,0 +1,90 @@
+/* @import */
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: rgb(4, 12, 6);
+
+}
+    
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    
+   
+}
+
+.dark-mode {
+    --primary-color: #001302;
+    --secondary-color: rgb(239, 255, 243);
+}
+
+.header {
+    background-color: rgb(13, 95, 38);
+    
+    background-image: url("greenbackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        
+
+    position: absolute;
+    width: 100%;
+    height: auto;
+    color: rgb(224, 240, 255);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 8px;
+    margin-right: 40px
+}
+
+
+
+.navlist {
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    color:  rgb(23, 95, 16);
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+    
+    
+    
+    
+}
+
+.navlist a{
+    text-decoration: none;
+    color:  rgb(23, 95, 16);
+    font-weight: bold;
+}
+
+.headerTitle2 {
+    padding-left: 30px;
+}
+
+.headerTitle {
+    color:rgb(244, 228, 255);
+    
+}
+
+.darkmode .header {
+    opacity: 0.1; 
+}
+
+@media (prefers-color-scheme: dark) {
+    .header{
+        background-image: url("greenbackground-dark.jpg");
+    }
+}

@@ -1,0 +1,1 @@
+web gunicorn Naijpol.wsgi:application --log-file -
